@@ -49,7 +49,7 @@ Adding `-e PERMITTED="10.11.99.*"` will permit only hosts with an IP address sta
 
 Due to the `fsid=0` parameter set in the **/etc/exports file**, there's no need to specify the folder name when mounting from a client. For example, this works fine even though the folder being mounted and shared is /nfsshare:
 
-`sudo mount -v 10.11.12.101:/ /some/where/here`
+`sudo mount -v <CONTAINER-IP>:/ /some/where/here`
 
 To be a little more explicit:
 
